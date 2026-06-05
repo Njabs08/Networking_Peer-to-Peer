@@ -9,15 +9,15 @@ This project demonstrates a basic peer-to-peer office network where two offices 
 
 # NETWORK TOPOLOGY
 
-ADMINISTRATIVE OFFICE1 (192.168.4.0/24)           IT OFFICE (10.0.0.0/16)
- ─────────────────────────                        ───────────────────────
-  [PC1]  [PC2]   [PC3]                                 [PC4]   [PC5]
-    \       |       /                                   \        /
-     [─── SW1 ───]                                     [─── SW2 ───]
-            |                                               |
-       Gi0/0 │                                          │ Gi0/1
-                    └──────── [R1] ────────────┘
-                              Router
+OFFICE 1 (192.168.4.0/24)          OFFICE 2 (10.0.0.0/16)
+ ─────────────────────────          ───────────────────────
+  [PC1]   [PC2]   [PC3]              [PC4]   [PC5]
+    \       |       /                   \       /
+     [─── SW1 ───]                   [─── SW2 ───]
+            |                                |
+       Gi0/0 │                          │ Gi0/1
+             └──────── [R1] ────────────┘
+                      Router
 
 # IP Addressing Table
 Device  Interface  IP Address    Subnet Mask     Default Gateway    
