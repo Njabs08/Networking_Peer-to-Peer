@@ -8,16 +8,7 @@ A simulated inter-office network connecting two branch offices using a single ro
 This project demonstrates a basic peer-to-peer office network where two offices which are Administrative Office and IT office with different IP addressing schemes communicate through a centrally connected router. It covers core networking concepts including IP addressing, subnetting, inter-LAN routing, and end-to-end connectivity verification.
 
 # NETWORK TOPOLOGY
-
-OFFICE 1 (192.168.4.0/24)          OFFICE 2 (10.0.0.0/16)
- ─────────────────────────          ───────────────────────
-  [PC1]   [PC2]   [PC3]              [PC4]   [PC5]
-    \       |       /                   \       /
-     [─── SW1 ───]                   [─── SW2 ───]
-            |                                |
-       Gi0/0 │                          │ Gi0/1
-             └──────── [R1] ────────────┘
-                      Router
+<img width="1920" height="1032" alt="Peer to Peer" src="https://github.com/user-attachments/assets/82f33e2d-5c65-4137-be65-ac622d4b5d77" />
 
 # IP Addressing Table
 Device  Interface  IP Address    Subnet Mask     Default Gateway    
